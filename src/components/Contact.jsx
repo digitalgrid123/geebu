@@ -19,19 +19,21 @@ const Contact = () => {
     <section id="contact-us">
       <div className="container-fluid">
         <div className="row">
-          <div className="col-lg-12 padding-zero">
+          <div className="col-lg-12 ">
             <div className=" contact-section relative">
               <img
+                loading="lazy"
                 className="w-100"
                 src={
                   isMobile
-                    ? "/images/mobile-contact-1.png"
-                    : "/images/contact1.png"
+                    ? "/images/mobile-contact-1.webp"
+                    : "/images/contact1.webp"
                 }
                 alt="bg-img"
               />
               <div className="justify-between align-logo">
                 <img
+                  loading="lazy"
                   className="geebu-image "
                   src="/images/geebu.svg"
                   alt="logo-icon"
@@ -53,6 +55,7 @@ const Contact = () => {
 
               <div className="image-absolute-wrapper">
                 <img
+                  loading="lazy"
                   className="img-afrobeats"
                   src="/images/Afrobeats..png"
                   alt="Afrobeats"
@@ -61,11 +64,12 @@ const Contact = () => {
             </div>
             <div className="contact-footer relative">
               <img
+                loading="lazy"
                 className="w-100"
                 src={
                   isMobile
-                    ? "/images/mobile-contact-2.png"
-                    : "/images/contact2.png"
+                    ? "/images/mobile-contact-2.webp"
+                    : "/images/contact2.webp"
                 }
                 alt="bg-img"
               />
@@ -79,20 +83,47 @@ const Contact = () => {
                     </div>
                     <div className="col-lg-8 images-adjust">
                       <img
+                        loading="lazy"
                         src="/images/batminton.svg"
                         alt="footer-img"
                         srcset=""
                       />
-                      <img src="/images/mic.svg" alt="footer-img" srcset="" />
-                      <img src="/images/plate.svg" alt="footer-img" srcset="" />
                       <img
+                        loading="lazy"
+                        src="/images/mic.svg"
+                        alt="footer-img"
+                        srcset=""
+                      />
+                      <img
+                        loading="lazy"
+                        src="/images/plate.svg"
+                        alt="footer-img"
+                        srcset=""
+                      />
+                      <img
+                        loading="lazy"
                         src="/images/guitar.svg"
                         alt="footer-img"
                         srcset=""
                       />
-                      <img src="/images/jwel.svg" alt="footer-img" srcset="" />
-                      <img src="/images/flute.svg" alt="footer-img" srcset="" />
-                      <img src="/images/mic2.svg" alt="footer-img" srcset="" />
+                      <img
+                        loading="lazy"
+                        src="/images/jwel.svg"
+                        alt="footer-img"
+                        srcset=""
+                      />
+                      <img
+                        loading="lazy"
+                        src="/images/flute.svg"
+                        alt="footer-img"
+                        srcset=""
+                      />
+                      <img
+                        loading="lazy"
+                        src="/images/mic2.svg"
+                        alt="footer-img"
+                        srcset=""
+                      />
                     </div>
                   </div>
                 </div>

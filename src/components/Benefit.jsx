@@ -20,14 +20,15 @@ const Benefit = () => {
     <section id="benefits">
       <div className="container-fluid">
         <div className="row">
-          <div className="col-lg-6 padding-zero">
+          <div className="col-lg-6 ">
             <div className="bg-approach relative">
               <img
+                loading="lazy"
                 className="w-100"
                 src={
                   isMobile
-                    ? "/images/mobile-benefit-1.png"
-                    : "/images/benefit1.png"
+                    ? "/images/mobile-benefit-1.webp"
+                    : "/images/benefit1.webp"
                 }
                 alt="bg-pain-img"
               />
@@ -43,11 +44,12 @@ const Benefit = () => {
             </div>
             <div className="benefit-footer top-minus-50 relative">
               <img
+                loading="lazy"
                 className="w-100 img-absoulte"
                 src={
                   isMobile
-                    ? "/images/mobile-benefit-2.png"
-                    : "/images/benefit2.png"
+                    ? "/images/mobile-benefit-2.webp"
+                    : "/images/benefit2.webp"
                 }
                 alt=""
               />
@@ -58,14 +60,15 @@ const Benefit = () => {
               </div>
             </div>
           </div>
-          <div className="col-lg-6 padding-zero">
+          <div className="col-lg-6 ">
             <div className="bg-approach relative">
               <img
+                loading="lazy"
                 className="w-100"
                 src={
                   isMobile
-                    ? "/images/mobile-benefit-1.png"
-                    : "/images/benefit1.png"
+                    ? "/images/mobile-benefit-1.webp"
+                    : "/images/benefit1.webp"
                 }
                 alt="bg-pain-img"
               />
@@ -79,13 +82,14 @@ const Benefit = () => {
                 </h1>
               </div>
             </div>
-            <div className="approach-footer top-minus-50 relative">
+            <div className="benefit-footer top-minus-50 relative">
               <img
+                loading="lazy"
                 className="w-100 img-absoulte"
                 src={
                   isMobile
-                    ? "/images/mobile-benefit-2.png"
-                    : "/images/benefit2.png"
+                    ? "/images/mobile-benefit-2.webp"
+                    : "/images/benefit2.webp"
                 }
                 alt=""
               />

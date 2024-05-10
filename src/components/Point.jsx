@@ -20,15 +20,16 @@ const Point = () => {
     <section id="pain-points" className="">
       <div className="container-fluid">
         <div className="row">
-          <div className="col-lg-6 padding-zero ">
+          <div className="col-lg-6  ">
             <div className="bg-pain relative">
               <img
                 className="w-100"
                 src={
                   isMobile
-                    ? "/images/mobile-point-1.png"
-                    : "/images/bg-pain.png"
+                    ? "/images/mobile-point-1.webp"
+                    : "/images/bg-pain.webp"
                 }
+                loading="lazy"
                 alt="bg-pain-img"
               />
               <div className="absolute-first-point">
@@ -42,8 +43,11 @@ const Point = () => {
               <img
                 className="w-100 img-absoulte"
                 src={
-                  isMobile ? "/images/mobile-point-2.png" : "/images/point2.png"
+                  isMobile
+                    ? "/images/mobile-point-2.webp"
+                    : "/images/point2.webp"
                 }
+                loading="lazy"
                 alt=""
               />
               <div className="absolute-point-second">
@@ -58,15 +62,16 @@ const Point = () => {
               </div>
             </div>
           </div>
-          <div className="col-lg-6 padding-zero">
+          <div className="col-lg-6 ">
             <div className="bg-pain relative">
               <img
                 className="w-100"
                 src={
                   isMobile
-                    ? "/images/mobile-point-1.png"
-                    : "/images/bg-pain.png"
+                    ? "/images/mobile-point-1.webp"
+                    : "/images/bg-pain.webp"
                 }
+                loading="lazy"
                 alt="bg-pain-img"
               />
               <div className="absolute-first-point ">
@@ -78,9 +83,12 @@ const Point = () => {
             </div>
             <div className="pain-footer top-minus-50 relative">
               <img
+                loading="lazy"
                 className="w-100 img-absoulte"
                 src={
-                  isMobile ? "/images/mobile-point-2.png" : "/images/point2.png"
+                  isMobile
+                    ? "/images/mobile-point-2.webp"
+                    : "/images/point2.webp"
                 }
                 alt=""
               />

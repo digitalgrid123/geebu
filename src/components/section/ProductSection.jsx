@@ -1,10 +1,10 @@
 import React from "react";
 
-const ProductSection = ({ data }) => {
+const ProductSection = ({ data, isMobile }) => {
   return (
-    <div className="col-lg-6 padding-zero">
+    <div className="col-lg-6 ">
       <div className="product-section relative">
-        <img className="w-100" src={data.image1} alt="" />
+        <img loading="lazy" className="w-100" src={data.image1} alt="" />
         <div className="absolute-first-point">
           <h6 className="sub-heading">{data.heading1}</h6>
         </div>
@@ -15,7 +15,7 @@ const ProductSection = ({ data }) => {
         </div>
       </div>
       <div className="product-section-second relative top-minus-fourteen">
-        <img className="w-100" src={data.image2} alt="" />
+        <img loading="lazy" className={"w-100"} src={data.image2} alt="" />
         <div className="absolute-point-second">
           <p className="pain-paragraph">{data.description}</p>
         </div>

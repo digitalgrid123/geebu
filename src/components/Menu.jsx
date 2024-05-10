@@ -1,40 +1,50 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 
 const Menu = () => {
   const [activeSection, setActiveSection] = useState("about");
   const [isMobile, setIsMobile] = useState(false);
+  const [menuHeight, setMenuHeight] = useState("auto");
+  const menuRef = useRef(null);
 
   // Function to check if the screen size is mobile
   const checkIsMobile = () => {
     setIsMobile(window.innerWidth <= 768); // Adjust the breakpoint as needed
   };
 
-  // Add event listener to check screen size on component mount
+  // Function to set the height of the side menu based on screen height
+  const setSideMenuHeight = () => {
+    const screenHeight = window.innerHeight;
+    setMenuHeight(`${screenHeight}px`);
+  };
+
+  // Add event listeners to check screen size and set menu height on component mount and resize
   useEffect(() => {
     checkIsMobile();
+    setSideMenuHeight();
+
     window.addEventListener("resize", checkIsMobile);
+    window.addEventListener("resize", setSideMenuHeight);
+
     return () => {
       window.removeEventListener("resize", checkIsMobile);
+      window.removeEventListener("resize", setSideMenuHeight);
     };
   }, []);
 
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
-    const scrollPadding = 20; // Adjust this value as needed
+    const padding = 20; // Adjust this value as needed
     if (element) {
-      const elementTop = element.getBoundingClientRect().top;
-      const offset = elementTop - scrollPadding;
-      window.scrollTo({
-        top: offset,
-        behavior: "smooth",
-      });
       setActiveSection(sectionId); // Update active section when scrolled
+      const elementTop = element.getBoundingClientRect().top;
+      const offset = elementTop + window.pageYOffset - padding;
+      window.scrollTo({ top: offset, behavior: "smooth" });
     }
   };
 
   return (
-    <div className="side-menu">
-      <ul>
+    <div className="side-menu" ref={menuRef}>
+      <ul style={isMobile ? null : { height: menuHeight }}>
         <li
           className={`bg-blue navigation ${
             activeSection === "about" ? "active" : ""
@@ -49,7 +59,6 @@ const Menu = () => {
 
           {!isMobile && <h6 className="navigate-heading">About</h6>}
         </li>
-
         <li
           className={`bg-orange navigation ${
             activeSection === "pain-points" ? "active" : ""
@@ -79,7 +88,6 @@ const Menu = () => {
 
           {!isMobile && <h6 className="navigate-heading">New approach</h6>}
         </li>
-
         <li
           className={`bg-black navigation ${
             activeSection === "products" ? "active" : ""
@@ -94,7 +102,6 @@ const Menu = () => {
 
           {!isMobile && <h6 className="navigate-heading">Products</h6>}
         </li>
-
         <li
           className={`bg-yellow navigation ${
             activeSection === "benefits" ? "active" : ""
@@ -117,7 +124,6 @@ const Menu = () => {
 
           {!isMobile && <h6 className="navigate-heading">Benefits</h6>}
         </li>
-
         <li
           className={`bg-purple navigation ${
             activeSection === "contact-us" ? "active" : ""

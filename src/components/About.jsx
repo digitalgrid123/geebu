@@ -21,16 +21,17 @@ const About = () => {
       <section id="about">
         <div className="container-fluid">
           <div className="row">
-            <div className="col-lg-12 padding-zero">
+            <div className="col-lg-12 ">
               <div className=" about-section relative">
                 <img
                   className="w-100"
                   src={
                     isMobile
-                      ? "/images/mobile-about-1.png"
-                      : "/images/bg-about.png"
+                      ? "/images/mobile-about-1.webp"
+                      : "/images/bg-about.webp"
                   }
                   alt="bg-img"
+                  loading="lazy"
                 />
                 <div className="justify-between align-logo">
                   <img
@@ -65,10 +66,11 @@ const About = () => {
                   className="w-100"
                   src={
                     isMobile
-                      ? "/images/mobile-about-2.png"
-                      : "/images/about2.png"
+                      ? "/images/mobile-about-2.webp"
+                      : "/images/about2.webp"
                   }
                   alt="bg-img"
+                  loading="lazy"
                 />
                 <div className="absolute-images">
                   <img

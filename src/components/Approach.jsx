@@ -18,9 +18,10 @@ const Approach = () => {
     <section id="new-approach">
       <div className="container-fluid">
         <div className="row">
-          <div className="col-lg-12 padding-zero">
+          <div className="col-lg-12 ">
             <div className=" approach-section relative">
               <img
+                loading="lazy"
                 className="w-100"
                 src={
                   isMobile
@@ -41,7 +42,7 @@ const Approach = () => {
               </div>
             </div>
           </div>
-          <div className="col-lg-12 padding-zero">
+          <div className="col-lg-12 ">
             <div class="approach-footer relative">
               <div class="absuolete">
                 <p class="approach-paragraph">
@@ -54,6 +55,7 @@ const Approach = () => {
                 </p>
               </div>
               <img
+                loading="lazy"
                 class="w-100"
                 src={
                   isMobile
