@@ -33,12 +33,15 @@ const Menu = () => {
 
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
-    const padding = 20; // Adjust this value as needed
     if (element) {
       setActiveSection(sectionId); // Update active section when scrolled
-      const elementTop = element.getBoundingClientRect().top;
-      const offset = elementTop + window.pageYOffset - padding;
-      window.scrollTo({ top: offset, behavior: "smooth" });
+      if ("scrollIntoView" in element) {
+        element.scrollIntoView({ behavior: "smooth", block: "start" });
+      } else {
+        const offset =
+          element.getBoundingClientRect().top + window.pageYOffset - 20; // Adjust padding as needed
+        window.scrollTo({ top: offset, behavior: "smooth" });
+      }
     }
   };
 
