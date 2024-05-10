@@ -174,7 +174,7 @@ section {
 
 .main-content {
   flex: 1;
-  overflow-y: auto;
+  overflow-y: hidden;
   overflow-x: hidden;
 }
 
@@ -341,7 +341,7 @@ section {
   gap: 24px;
   justify-content: center;
   width: 100%;
-  padding: 44px 0 0 0;
+  /* padding: 44px 0 0 0; */
   transform: translateY(-50%);
   text-align: center;
 }

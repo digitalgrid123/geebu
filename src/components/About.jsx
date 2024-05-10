@@ -46,8 +46,8 @@ const About = () => {
                     <div className="col-lg-1"></div>
                     <div className="col-lg-10 ">
                       <h1 className="relative">
-                        AI powered investment platform for African entertainment
-                        industry, starting with{" "}
+                        AI powered investment <br /> platform for African <br />
+                        entertainment industry, <br /> starting with{" "}
                         <span class="image-wrapper">
                           <img
                             className="img-afrobeats"

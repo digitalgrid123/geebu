@@ -36,10 +36,16 @@ const Menu = () => {
     if (element) {
       setActiveSection(sectionId); // Update active section when scrolled
       if ("scrollIntoView" in element) {
-        element.scrollIntoView({ behavior: "smooth", block: "start" });
+        element.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+          inline: "nearest",
+        });
       } else {
-        const offset =
-          element.getBoundingClientRect().top + window.pageYOffset - 20; // Adjust padding as needed
+        // Calculate offset for mobile devices
+        const offset = isMobile
+          ? element.offsetTop - menuRef.current.offsetTop
+          : element.getBoundingClientRect().top + window.pageYOffset - 20; // Adjust padding as needed
         window.scrollTo({ top: offset, behavior: "smooth" });
       }
     }
@@ -76,11 +82,10 @@ const Menu = () => {
 
           {!isMobile && <h6 className="navigate-heading">Pain points</h6>}
         </li>
-
         <li
           className={`bg-green navigation ${
             activeSection === "new-approach" ? "active" : ""
-          } ${isMobile && activeSection !== "new-approach" ? "centered" : ""}`}
+          }${isMobile && activeSection !== "new-approach" ? "centered" : ""}`}
           onClick={() => scrollToSection("new-approach")}
         >
           <h6 className="roman-text">III</h6>
@@ -111,29 +116,22 @@ const Menu = () => {
           }${isMobile && activeSection !== "benefits" ? "centered" : ""}`}
           onClick={() => scrollToSection("benefits")}
         >
-          <h6 className="roman-text text-black">V</h6>
+          <h6 className="roman-text">V</h6>
 
           {isMobile && activeSection === "benefits" && (
-            <h6
-              className={
-                activeSection === "benefits"
-                  ? "navigate-heading text-black"
-                  : "navigate-heading"
-              }
-            >
-              Benefits
-            </h6>
+            <h6 className="navigate-heading">Benefits</h6>
           )}
 
           {!isMobile && <h6 className="navigate-heading">Benefits</h6>}
         </li>
+
         <li
           className={`bg-purple navigation ${
             activeSection === "contact-us" ? "active" : ""
           }${isMobile && activeSection !== "contact-us" ? "centered" : ""}`}
           onClick={() => scrollToSection("contact-us")}
         >
-          <h6 className="roman-text">VI</h6>
+          <h6 className="roman-text"> VI</h6>
 
           {isMobile && activeSection === "contact-us" && (
             <h6 className="navigate-heading">Contact us</h6>
