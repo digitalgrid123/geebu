@@ -1,23 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+// App.js
+import React from "react";
+import "./App.css";
+import Menu from "./components/Menu";
+import About from "./components/About";
+import Point from "./components/Point";
+import Approach from "./components/Approach";
+import Product from "./components/Product";
+import Benefit from "./components/Benefit";
+import Contact from "./components/Contact";
+// Import other components here
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container-fluid">
+      <div className="row">
+        <div className="col-md-12">
+          <Menu />
+        </div>
+      </div>
+      <main className="main-content">
+        <div className="row">
+          <div className="col-md-10 offset-md-2 padding-zero">
+            <About />
+            <Point />
+            <Approach />
+            <Product />
+            <Benefit />
+            <Contact />
+          </div>
+        </div>
+      </main>
     </div>
   );
 }
