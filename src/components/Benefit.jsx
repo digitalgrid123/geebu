@@ -21,39 +21,43 @@ const Benefit = () => {
       <div className="container-fluid">
         <div className="row">
           <div className="col-lg-6 ">
-            <div className="bg-approach relative">
-              <img
-                loading="lazy"
-                className="w-100"
-                src={
+            <div
+              className="bg-approach relative"
+              style={{
+                backgroundImage: `url(${
                   isMobile
                     ? "/images/mobile-benefit-1.webp"
                     : "/images/benefit1.webp"
-                }
-                alt="bg-pain-img"
-              />
-              <div className="absolute-first-point">
+                })`,
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+            >
+              <div className="">
                 <h6 className="sub-heading text-black">For Fans</h6>
               </div>
-              <div className="absolute-second-point">
+              <div className="">
                 <h1 className="mt-101 text-black">
                   Invest in the next big star, influence their careers, and
                   enjoy exclusive benefits
                 </h1>
               </div>
             </div>
-            <div className="benefit-footer top-minus-50 relative">
-              <img
-                loading="lazy"
-                className="w-100 img-absoulte"
-                src={
+            <div
+              className="benefit-footer top-minus-50 relative"
+              style={{
+                backgroundImage: `url(${
                   isMobile
                     ? "/images/mobile-benefit-2.webp"
                     : "/images/benefit2.webp"
-                }
-                alt=""
-              />
-              <div className="align-text">
+                })`,
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+            >
+              <div className="align-btn">
                 <button className="bg-black sign-btn">
                   <span className="sign-text">sign up</span>
                 </button>
@@ -61,39 +65,43 @@ const Benefit = () => {
             </div>
           </div>
           <div className="col-lg-6 ">
-            <div className="bg-approach relative">
-              <img
-                loading="lazy"
-                className="w-100"
-                src={
+            <div
+              className="bg-approach relative"
+              style={{
+                backgroundImage: `url(${
                   isMobile
                     ? "/images/mobile-benefit-1.webp"
                     : "/images/benefit1.webp"
-                }
-                alt="bg-pain-img"
-              />
-              <div className="absolute-first-point ">
+                })`,
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+            >
+              <div className="">
                 <h6 className="sub-heading text-black">For Artists</h6>
               </div>
-              <div className="absolute-second-point">
+              <div className="">
                 <h1 className="mt-101 text-black">
                   Gain dedicated fanbase, funding, and exposure before hitting
                   mainstream.
                 </h1>
               </div>
             </div>
-            <div className="benefit-footer top-minus-50 relative">
-              <img
-                loading="lazy"
-                className="w-100 img-absoulte"
-                src={
+            <div
+              className="benefit-footer top-minus-50 relative"
+              style={{
+                backgroundImage: `url(${
                   isMobile
                     ? "/images/mobile-benefit-2.webp"
                     : "/images/benefit2.webp"
-                }
-                alt=""
-              />
-              <div className="align-text">
+                })`,
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+            >
+              <div className="align-btn">
                 <button className="bg-black sign-btn">
                   <span className="sign-text">sign up</span>
                 </button>

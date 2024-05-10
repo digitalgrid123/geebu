@@ -67,6 +67,7 @@ a:hover {
 }
 .mt-101 {
   margin-top: 101px;
+  margin-bottom: 209px;
 }
 .mt-176 {
   margin-top: 176px;
@@ -171,6 +172,17 @@ section {
 .navigation.active {
   gap: 456px;
 }
+.align-images {
+  display: flex;
+  justify-content: space-around;
+  padding: 52px 40px;
+}
+.padding-logo {
+  padding: 28px 40px;
+}
+.height-text {
+  height: calc(100vh - 500px);
+}
 
 .main-content {
   flex: 1;
@@ -260,14 +272,19 @@ section {
 }
 .bg-pain {
   border: 1px solid var(--orange);
-
+  padding: 37px 14px 37px 54px;
   border-radius: 28px;
+  height: 55vh;
 }
 
 .pain-footer {
   width: 100%;
   border-radius: 28px;
   border: 1px solid var(--orange);
+  padding: 65px 13px 55px 55px;
+  position: relative;
+  top: -50px;
+  height: 18vh;
 }
 
 .pain-paragraph {
@@ -291,6 +308,7 @@ section {
 .approach-section {
   border: 1px solid var(--green);
   border-radius: 28px;
+  padding: 32px 48px;
 }
 .approach-paragraph {
   font-size: 20px;
@@ -307,13 +325,17 @@ section {
 }
 .approach-footer {
   margin-top: 12px;
-  /* 
+
   border: 1px solid var(--green);
-  border-radius: 28px; */
+  border-radius: 28px;
+  padding: 32px 48px;
 }
 
 .approach-footer {
   position: relative;
+}
+.mt-40 {
+  margin-top: 40px;
 }
 
 .absuolete {
@@ -327,10 +349,13 @@ section {
 .product-section {
   border-radius: 28px 28px 0px 0px;
   border: 1px solid var(--black);
+  padding: 32px 48px;
 }
 .product-section-second {
   border-radius: 5px 5px 28px 28px;
   border: 1px solid var(--black);
+  padding: 44px 18px 44px 48px;
+  height: 150px;
 }
 
 .absolute-position-approach {
@@ -345,14 +370,30 @@ section {
   transform: translateY(-50%);
   text-align: center;
 }
+.gap-approach {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  gap: 24px;
+}
+.align-btn {
+  display: flex;
+  justify-content: center;
+  padding-top: 119px;
+  padding-bottom: 65px;
+  height: 280px;
+}
 
 .relative-approach-section {
   border: 1px solid var(--black);
   border-radius: 28px;
+  padding: 56px 43px;
 }
 .bg-approach {
+  padding: 37px 23px 37px 48px;
   border: 1px solid var(--yellow);
   border-radius: 28px 28px 0px 0px;
+  height: 70vh;
 }
 .benefit-footer {
   border: 1px solid var(--yellow);
@@ -380,6 +421,7 @@ section {
   margin-top: 20px;
   border: 1px solid var(--dark-purple);
   border-radius: 28px;
+  padding: 27px 38px 27px 113px;
 }
 
 section:last-of-type {
@@ -424,7 +466,6 @@ section:last-of-type {
   right: 50px;
 }
 
-/* Styles for screens around 390px wide */
 @media only screen and (max-width: 390px) {
   h1 {
     font-size: 33px !important;
@@ -450,6 +491,59 @@ section:last-of-type {
 }
 
 @media (max-width: 768px) {
+  .pl-15 {
+    padding-left: 15px;
+  }
+  .contact-footer {
+    padding: 27px 22px 27px 15px;
+  }
+  .flex-center {
+    display: flex;
+    justify-content: center;
+  }
+  .bg-approach {
+    padding: 30px 23px 30px 30px;
+  }
+  .approach-footer {
+    padding: 30px 30px;
+  }
+  .gap-approach {
+    flex-direction: column;
+    align-items: start;
+  }
+  .product-section {
+    padding: 30px 30px;
+  }
+  .approach-section {
+    padding: 30px 30px;
+  }
+  .height-main {
+    height: calc(100vh - 270px) !important;
+  }
+  .pain-footer {
+    padding: 65px 13px 36px 30px;
+    position: relative;
+    top: -40px;
+    height: 34vh;
+  }
+  .product-section-second {
+    padding: 35px 18px 17px 30px;
+  }
+  .bg-pain {
+    border: 1px solid var(--orange);
+    padding: 30px 14px 23px 30px;
+  }
+  .align-images {
+    padding: 20px 17px;
+    gap: 35px;
+    flex-wrap: wrap;
+  }
+  .height-text {
+    height: calc(100vh - 420px);
+  }
+  .padding-logo {
+    padding: 30px 30px;
+  }
   .navigation {
     border-radius: 20px;
     padding: 2px 22px;

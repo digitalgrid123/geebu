@@ -20,18 +20,20 @@ const Contact = () => {
       <div className="container-fluid">
         <div className="row">
           <div className="col-lg-12 ">
-            <div className=" contact-section relative">
-              <img
-                loading="lazy"
-                className="w-100"
-                src={
+            <div
+              className=" contact-section relative"
+              style={{
+                backgroundImage: `url(${
                   isMobile
                     ? "/images/mobile-contact-1.webp"
                     : "/images/contact1.webp"
-                }
-                alt="bg-img"
-              />
-              <div className="justify-between align-logo">
+                })`,
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+            >
+              <div className="justify-between padding-logo ">
                 <img
                   loading="lazy"
                   className="geebu-image "
@@ -40,14 +42,16 @@ const Contact = () => {
                 />
                 <h6 className="est-text">EST 2024</h6>
               </div>
-              <div className="container-fluid align-text">
+              <div className="container-fluid ">
                 <div className="row">
                   <div className="col-lg-1"></div>
                   <div className="col-lg-10 ">
-                    <h1 className="relative">
-                      Shape the future of African entertainment industry with
-                      GEEBU.
-                    </h1>
+                    <div className="height-text d-flex align-items-center">
+                      <h1 className="relative pl-15 ">
+                        Shape the future of African entertainment industry with
+                        GEEBU.
+                      </h1>
+                    </div>
                   </div>
                   <div className="col-lg-1"></div>
                 </div>
@@ -62,21 +66,23 @@ const Contact = () => {
                 />
               </div>
             </div>
-            <div className="contact-footer relative">
-              <img
-                loading="lazy"
-                className="w-100"
-                src={
+            <div
+              className="contact-footer relative"
+              style={{
+                backgroundImage: `url(${
                   isMobile
                     ? "/images/mobile-contact-2.webp"
                     : "/images/contact2.webp"
-                }
-                alt="bg-img"
-              />
-              <div className="absolute-contact">
+                })`,
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+            >
+              <div className="">
                 <div className="container-fluid">
                   <div className="row">
-                    <div className="col-lg-4 ">
+                    <div className="col-lg-4 flex-center ">
                       <button className="bg-white contact-btn">
                         <span>Contact us</span>
                       </button>

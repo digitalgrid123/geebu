@@ -21,36 +21,40 @@ const Point = () => {
       <div className="container-fluid">
         <div className="row">
           <div className="col-lg-6  ">
-            <div className="bg-pain relative">
-              <img
-                className="w-100"
-                src={
+            <div
+              className="bg-pain relative"
+              style={{
+                backgroundImage: `url(${
                   isMobile
                     ? "/images/mobile-point-1.webp"
                     : "/images/bg-pain.webp"
-                }
-                loading="lazy"
-                alt="bg-pain-img"
-              />
-              <div className="absolute-first-point">
+                })`,
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+            >
+              <div className="">
                 <h6 className="sub-heading">Pain Point A.</h6>
               </div>
-              <div className="absolute-second-point">
+              <div className="">
                 <h1 className="mt-101">Hidden gems. Missed Opportunities. </h1>
               </div>
             </div>
-            <div className="pain-footer top-minus-50 relative">
-              <img
-                className="w-100 img-absoulte"
-                src={
+            <div
+              className="pain-footer  relative"
+              style={{
+                backgroundImage: `url(${
                   isMobile
                     ? "/images/mobile-point-2.webp"
                     : "/images/point2.webp"
-                }
-                loading="lazy"
-                alt=""
-              />
-              <div className="absolute-point-second">
+                })`,
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+            >
+              <div className="">
                 <p className="pain-paragraph">
                   Unlike tech startup founders who often have access to
                   institutional or well-organized investment from the very
@@ -62,37 +66,33 @@ const Point = () => {
               </div>
             </div>
           </div>
-          <div className="col-lg-6 ">
-            <div className="bg-pain relative">
-              <img
-                className="w-100"
-                src={
-                  isMobile
-                    ? "/images/mobile-point-1.webp"
-                    : "/images/bg-pain.webp"
-                }
-                loading="lazy"
-                alt="bg-pain-img"
-              />
-              <div className="absolute-first-point ">
+          <div className="col-lg-6  ">
+            <div
+              className="bg-pain relative"
+              style={{
+                backgroundImage: `url(${"/images/bg-pain.webp"})`,
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+            >
+              <div className="">
                 <h6 className="sub-heading">Pain Point B.</h6>
               </div>
-              <div className="absolute-second-point">
+              <div className="">
                 <h1 className="mt-101">Passive Fans. Limited Impacts. </h1>
               </div>
             </div>
-            <div className="pain-footer top-minus-50 relative">
-              <img
-                loading="lazy"
-                className="w-100 img-absoulte"
-                src={
-                  isMobile
-                    ? "/images/mobile-point-2.webp"
-                    : "/images/point2.webp"
-                }
-                alt=""
-              />
-              <div className="absolute-point-second">
+            <div
+              className="pain-footer  relative"
+              style={{
+                backgroundImage: `url(${"/images/point2.webp"})`,
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+            >
+              <div className="">
                 <p className="pain-paragraph">
                   Traditional music industry models leave fans with limited ways
                   to directly support and influence the careers of their

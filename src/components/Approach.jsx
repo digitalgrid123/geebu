@@ -19,21 +19,19 @@ const Approach = () => {
       <div className="container-fluid">
         <div className="row">
           <div className="col-lg-12 ">
-            <div className=" approach-section relative">
-              <img
-                loading="lazy"
-                className="w-100"
-                src={
-                  isMobile
-                    ? "/images/mobile-approach-1.png"
-                    : "/images/bg-approach.png"
-                }
-                alt=""
-              />
-              <div className="absolute-first-approach">
+            <div
+              className=" approach-section relative"
+              style={{
+                backgroundImage: `url(${"/images/bg-approach.png"})`,
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+            >
+              <div className="">
                 <h6 className="sub-heading">Pitch</h6>
               </div>
-              <div className="absolute-second-approach">
+              <div className="height-text d-flex align-items-center height-main">
                 <h1>
                   Fans owned & managed <br /> virtual record labels, gamified{" "}
                   <br />
@@ -43,8 +41,16 @@ const Approach = () => {
             </div>
           </div>
           <div className="col-lg-12 ">
-            <div class="approach-footer relative">
-              <div class="absuolete">
+            <div
+              class="approach-footer relative "
+              style={{
+                backgroundImage: `url(${"/images/bg-approach.png"})`,
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+            >
+              <div class="">
                 <p class="approach-paragraph">
                   <span class="weight-800">Geebu</span> empowers fans to become
                   active investors (virtual record labels owners) and
@@ -54,16 +60,6 @@ const Approach = () => {
                   and propel the next big stars.
                 </p>
               </div>
-              <img
-                loading="lazy"
-                class="w-100"
-                src={
-                  isMobile
-                    ? "/images/mobile-approach-2.png"
-                    : "/images/approach2.png"
-                }
-                alt=""
-              />
             </div>
           </div>
         </div>

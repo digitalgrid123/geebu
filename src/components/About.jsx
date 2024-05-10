@@ -16,36 +16,35 @@ const About = () => {
       window.removeEventListener("resize", checkIsMobile);
     };
   }, []);
+
   return (
-    <>
-      <section id="about">
-        <div className="container-fluid">
-          <div className="row">
-            <div className="col-lg-12 ">
-              <div className=" about-section relative">
+    <section id="about">
+      <div className="container-fluid">
+        <div className="row">
+          <div className="col-lg-12">
+            <div
+              className="about-section relative"
+              style={{
+                backgroundImage: `url(${"/images/bg-about.webp"})`,
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+            >
+              <div className="justify-between padding-logo">
                 <img
-                  className="w-100"
-                  src={
-                    isMobile
-                      ? "/images/mobile-about-1.webp"
-                      : "/images/bg-about.webp"
-                  }
-                  alt="bg-img"
-                  loading="lazy"
+                  className="geebu-image"
+                  src="/images/geebu.svg"
+                  alt="logo-icon"
                 />
-                <div className="justify-between align-logo">
-                  <img
-                    className="geebu-image"
-                    src="/images/geebu.svg"
-                    alt="logo-icon"
-                  />
-                  <h6 className="est-text">EST 2024</h6>
-                </div>
-                <div className="container-fluid align-text">
-                  <div className="row">
-                    <div className="col-lg-1"></div>
-                    <div className="col-lg-10 ">
-                      <h1 className="relative">
+                <h6 className="est-text">EST 2024</h6>
+              </div>
+              <div className="container-fluid ">
+                <div className="row">
+                  <div className="col-lg-1"></div>
+                  <div className="col-lg-10 ">
+                    <div className="height-text d-flex align-items-center">
+                      <h1 className="relative pl-15 ">
                         AI powered investment <br /> platform for African <br />
                         entertainment industry, <br /> starting with{" "}
                         <span class="image-wrapper">
@@ -57,71 +56,70 @@ const About = () => {
                         </span>
                       </h1>
                     </div>
-                    <div className="col-lg-1"></div>
                   </div>
+                  <div className="col-lg-1"></div>
                 </div>
               </div>
-              <div className="about-footer relative">
+            </div>
+
+            <div
+              className="about-footer "
+              style={{
+                backgroundImage: `url(${"/images/about2.webp"})`,
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+            >
+              <div className="align-images">
                 <img
-                  className="w-100"
-                  src={
-                    isMobile
-                      ? "/images/mobile-about-2.webp"
-                      : "/images/about2.webp"
-                  }
-                  alt="bg-img"
-                  loading="lazy"
+                  className="instrument-img"
+                  src="/images/batminton.svg"
+                  alt="footer-img"
+                  srcset=""
                 />
-                <div className="absolute-images">
-                  <img
-                    className="instrument-img"
-                    src="/images/batminton.svg"
-                    alt="footer-img"
-                    srcset=""
-                  />
-                  <img
-                    className="instrument-img"
-                    src="/images/mic.svg"
-                    alt="footer-img"
-                    srcset=""
-                  />
-                  <img
-                    className="instrument-img"
-                    src="/images/plate.svg"
-                    alt="footer-img"
-                    srcset=""
-                  />
-                  <img
-                    className="instrument-img"
-                    src="/images/guitar.svg"
-                    alt="footer-img"
-                    srcset=""
-                  />
-                  <img
-                    className="instrument-img"
-                    src="/images/jwel.svg"
-                    alt="footer-img"
-                    srcset=""
-                  />
-                  <img
-                    className="instrument-img"
-                    src="/images/flute.svg"
-                    alt="footer-img"
-                    srcset=""
-                  />
-                  <img
-                    className="instrument-img"
-                    src="/images/mic2.svg"
-                    alt="footer-img"
-                    srcset=""
-                  />
-                </div>
+                <img
+                  className="instrument-img"
+                  src="/images/mic.svg"
+                  alt="footer-img"
+                  srcset=""
+                />
+                <img
+                  className="instrument-img"
+                  src="/images/plate.svg"
+                  alt="footer-img"
+                  srcset=""
+                />
+                <img
+                  className="instrument-img"
+                  src="/images/guitar.svg"
+                  alt="footer-img"
+                  srcset=""
+                />
+                <img
+                  className="instrument-img"
+                  src="/images/jwel.svg"
+                  alt="footer-img"
+                  srcset=""
+                />
+                <img
+                  className="instrument-img"
+                  src="/images/flute.svg"
+                  alt="footer-img"
+                  srcset=""
+                />
+                <img
+                  className="instrument-img"
+                  src="/images/mic2.svg"
+                  alt="footer-img"
+                  srcset=""
+                />
               </div>
             </div>
           </div>
         </div>
-      </section>
-    </>
+      </div>
+    </section>
   );
 };
 

@@ -80,18 +80,20 @@ const Product = () => {
             <ProductSection key={index} data={data} isMobile={isMobile} />
           ))}
           <div className="col-lg-12 ">
-            <div className="relative relative-approach-section">
-              <img
-                loading="lazy"
-                className="w-100 radius-28"
-                src={
+            <div
+              className="relative relative-approach-section"
+              style={{
+                backgroundImage: `url(${
                   isMobile
                     ? "/images/mobile-product-3.webp"
                     : "/images/product3.webp"
-                }
-                alt="product3"
-              />
-              <div className="absolute-position-approach ">
+                })`,
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+            >
+              <div className="gap-approach ">
                 <img loading="lazy" src="/images/geebu-icon.svg" alt="" />
                 <h1 className="m-0 lh-50">
                   <span className="font-50">Mr</span>.GEEBU
