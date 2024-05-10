@@ -4,7 +4,7 @@ const Menu = () => {
   const [activeSection, setActiveSection] = useState("about");
   const [isMobile, setIsMobile] = useState(false);
   const [menuHeight, setMenuHeight] = useState("auto");
-  const [gap, setGap] = useState(0);
+  const [gapHeight, setGapHeight] = useState(0); // State to hold the gap height
   const menuRef = useRef(null);
 
   // Function to check if the screen size is mobile
@@ -18,27 +18,28 @@ const Menu = () => {
     setMenuHeight(`${screenHeight}px`);
   };
 
-  // Calculate gap based on the height of the screen
-  const calculateGap = () => {
-    const menuItemHeight = menuRef.current.querySelector("li").offsetHeight;
-    const gapValue = (window.innerHeight - menuItemHeight) / 2;
-    setGap(gapValue);
+  // Function to calculate and set the gap height
+  const calculateGapHeight = () => {
+    const screenHeight = window.innerHeight;
+    const totalItemsHeight = menuRef.current.offsetHeight;
+    const totalGapHeight = screenHeight - totalItemsHeight;
+    setGapHeight(totalGapHeight);
   };
 
-  // Add event listeners to check screen size and set menu height on component mount and resize
+  // Add event listeners to check screen size, set menu height, and calculate gap height on component mount and resize
   useEffect(() => {
     checkIsMobile();
     setSideMenuHeight();
-    calculateGap();
+    calculateGapHeight();
 
     window.addEventListener("resize", checkIsMobile);
     window.addEventListener("resize", setSideMenuHeight);
-    window.addEventListener("resize", calculateGap);
+    window.addEventListener("resize", calculateGapHeight);
 
     return () => {
       window.removeEventListener("resize", checkIsMobile);
       window.removeEventListener("resize", setSideMenuHeight);
-      window.removeEventListener("resize", calculateGap);
+      window.removeEventListener("resize", calculateGapHeight);
     };
   }, []);
 
@@ -70,7 +71,11 @@ const Menu = () => {
             activeSection === "about" ? "active" : ""
           } ${isMobile && activeSection !== "about" ? "centered" : ""}`}
           onClick={() => scrollToSection("about")}
-          style={{ gap: activeSection === "about" ? `${gap}px` : 0 }}
+          style={
+            !isMobile && activeSection !== "about"
+              ? { gap: `${gapHeight}px` }
+              : null
+          } // Adjust gap for desktop
         >
           <h6 className="roman-text">I</h6>
           {isMobile && activeSection === "about" && (
@@ -81,9 +86,13 @@ const Menu = () => {
         <li
           className={`bg-orange navigation ${
             activeSection === "pain-points" ? "active" : ""
-          } ${isMobile && activeSection !== "pain-points" ? "centered" : ""}`}
+          }${isMobile && activeSection !== "pain-points" ? "centered" : ""}`}
           onClick={() => scrollToSection("pain-points")}
-          style={{ gap: activeSection === "pain-points" ? `${gap}px` : 0 }}
+          style={
+            !isMobile && activeSection !== "pain-points"
+              ? { gap: `${gapHeight}px` }
+              : null
+          } // Adjust gap for desktop
         >
           <h6 className="roman-text">II</h6>
           {isMobile && activeSection === "pain-points" && (
@@ -94,9 +103,13 @@ const Menu = () => {
         <li
           className={`bg-green navigation ${
             activeSection === "new-approach" ? "active" : ""
-          } ${isMobile && activeSection !== "new-approach" ? "centered" : ""}`}
+          }${isMobile && activeSection !== "new-approach" ? "centered" : ""}`}
           onClick={() => scrollToSection("new-approach")}
-          style={{ gap: activeSection === "new-approach" ? `${gap}px` : 0 }}
+          style={
+            !isMobile && activeSection !== "new-approach"
+              ? { gap: `${gapHeight}px` }
+              : null
+          } // Adjust gap for desktop
         >
           <h6 className="roman-text">III</h6>
           {isMobile && activeSection === "new-approach" && (
@@ -107,9 +120,13 @@ const Menu = () => {
         <li
           className={`bg-black navigation ${
             activeSection === "products" ? "active" : ""
-          } ${isMobile && activeSection !== "products" ? "centered" : ""}`}
+          }${isMobile && activeSection !== "products" ? "centered" : ""}`}
           onClick={() => scrollToSection("products")}
-          style={{ gap: activeSection === "products" ? `${gap}px` : 0 }}
+          style={
+            !isMobile && activeSection !== "products"
+              ? { gap: `${gapHeight}px` }
+              : null
+          } // Adjust gap for desktop
         >
           <h6 className="roman-text">IV</h6>
           {isMobile && activeSection === "products" && (
@@ -120,9 +137,13 @@ const Menu = () => {
         <li
           className={`bg-yellow navigation ${
             activeSection === "benefits" ? "active" : ""
-          } ${isMobile && activeSection !== "benefits" ? "centered" : ""}`}
+          }${isMobile && activeSection !== "benefits" ? "centered" : ""}`}
           onClick={() => scrollToSection("benefits")}
-          style={{ gap: activeSection === "benefits" ? `${gap}px` : 0 }}
+          style={
+            !isMobile && activeSection !== "benefits"
+              ? { gap: `${gapHeight}px` }
+              : null
+          } // Adjust gap for desktop
         >
           <h6 className="roman-text">V</h6>
           {isMobile && activeSection === "benefits" && (
@@ -133,11 +154,15 @@ const Menu = () => {
         <li
           className={`bg-purple navigation ${
             activeSection === "contact-us" ? "active" : ""
-          } ${isMobile && activeSection !== "contact-us" ? "centered" : ""}`}
+          }${isMobile && activeSection !== "contact-us" ? "centered" : ""}`}
           onClick={() => scrollToSection("contact-us")}
-          style={{ gap: activeSection === "contact-us" ? `${gap}px` : 0 }}
+          style={
+            !isMobile && activeSection !== "contact-us"
+              ? { gap: `${gapHeight}px` }
+              : null
+          } // Adjust gap for desktop
         >
-          <h6 className="roman-text">VI</h6>
+          <h6 className="roman-text"> VI</h6>
           {isMobile && activeSection === "contact-us" && (
             <h6 className="navigate-heading">Contact us</h6>
           )}

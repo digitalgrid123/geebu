@@ -169,9 +169,9 @@ section {
   justify-content: space-between;
 }
 
-/* .navigation.active {
+.navigation.active {
   gap: 456px;
-} */
+}
 .align-images {
   display: flex;
   justify-content: space-around;
@@ -181,7 +181,7 @@ section {
   padding: 28px 40px;
 }
 .height-text {
-  height: calc(100vh - 500px);
+  height: 80vh;
 }
 
 .main-content {
@@ -284,7 +284,7 @@ section {
   padding: 65px 13px 55px 55px;
   position: relative;
   top: -50px;
-  height: 25vh;
+  height: 32vh;
 }
 
 .pain-paragraph {
@@ -428,6 +428,7 @@ section:last-of-type {
   padding-bottom: 20px;
 }
 .contact-btn {
+  width: 394px;
   padding: 26px 116px;
   border-radius: 40px;
   border: 1px solid var(--text-color);
