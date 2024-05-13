@@ -25,7 +25,7 @@ const About = () => {
                     entertainment industry, <br />
                     starting with
                     <img
-                      className="img-afrobeats"
+                      className="img-afrobeats-about"
                       src="/images/Afrobeats..png"
                       alt="Afrobeats"
                     />

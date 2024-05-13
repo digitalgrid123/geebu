@@ -35,6 +35,7 @@ const Contact = () => {
                 <div className="image-absolute-wrapper">
                   <img
                     loading="lazy"
+                    className="img-afrobeats-contact"
                     src="/images/Afrobeats..png"
                     alt="Afrobeats"
                   />
