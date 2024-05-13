@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="container-fluid">
       <div className="row">
-        <div className="col-sm-1">
+        <div className="col-sm-1 pr-0">
           <Menu />
         </div>
         <div className="col-sm-11 p-0">
