@@ -11,7 +11,7 @@ const Approach = () => {
                 <div className="">
                   <h6 className="sub-heading">Pitch</h6>
                 </div>
-                <div className="height-text d-flex align-items-center height-main">
+                <div className="pt-180 pb-230 ">
                   <h1>
                     Fans owned & managed <br /> virtual record labels, gamified{" "}
                     <br />

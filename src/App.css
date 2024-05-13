@@ -25,6 +25,7 @@ body {
   box-sizing: border-box;
   font-family: "Nunito Sans", sans-serif;
   scroll-behavior: smooth;
+  background-color: #f8f4f1;
   color: var(--text-color);
 }
 img {
@@ -102,7 +103,7 @@ a:hover {
   background-color: var(--purple);
 }
 section {
-  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .center {
@@ -147,21 +148,20 @@ section {
   font-family: var(--Quattrocento);
 }
 .side-menu {
-  padding: 20px;
   height: auto;
   overflow-y: hidden;
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   bottom: 0;
-  width: 16.667%;
+  margin: 20px 0;
   display: flex;
   flex-direction: column;
 }
 
 .navigation {
   padding: 5px 15px;
-  border-radius: 10px;
+  border-radius: 20px;
   cursor: pointer;
   flex-grow: 1;
   display: flex;
@@ -172,7 +172,7 @@ section {
 }
 
 .navigation.active {
-  gap: 456px;
+  gap: 412px;
 }
 .align-images {
   display: flex;
@@ -187,7 +187,10 @@ section {
 }
 
 .main-content {
+  width: 100%;
   flex: 1;
+  padding-right: 20px;
+  margin: 20px 0;
   overflow-y: hidden;
   overflow-x: hidden;
 }
@@ -239,6 +242,21 @@ section {
   transform: translateY(-50%);
   text-align: center; /* Center-align the text */
 }
+.relative {
+  position: relative;
+}
+.pt-180 {
+  padding-top: 180px;
+}
+.pt-140 {
+  padding-top: 140px;
+}
+.pl-130 {
+  padding-left: 130px;
+}
+.pb-230 {
+  padding-bottom: 230px;
+}
 .about-section {
   border: 1px solid var(--dark-blue);
   border-radius: 20px;
@@ -254,14 +272,22 @@ section {
   width: 100%;
 }
 
-.relative {
+.position-relative {
   position: relative;
 }
-.image-wrapper {
-  display: inline-block;
 
-  padding-left: 15px;
+.starting-with {
+  position: relative;
 }
+
+.img-afrobeats {
+  position: absolute;
+
+  bottom: 0;
+
+  transform: translate(480px, -13px);
+}
+
 .about-footer {
   border: 1px solid var(--dark-blue);
   border-radius: 20px;
@@ -511,9 +537,6 @@ section {
   background-position: center;
 }
 
-section:last-of-type {
-  padding-bottom: 20px;
-}
 .contact-btn {
   padding: 26px 116px;
   border-radius: 40px;

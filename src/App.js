@@ -14,22 +14,20 @@ function App() {
   return (
     <div className="container-fluid">
       <div className="row">
-        <div className="col-md-2">
+        <div className="col-sm-1">
           <Menu />
         </div>
-      </div>
-      <main className="main-content">
-        <div className="row">
-          <div className="col-md-10 offset-md-2 padding-zero">
+        <div className="col-sm-11 p-0">
+          <main className="main-content">
             <About />
             <Point />
             <Approach />
             <Product />
             <Benefit />
             <Contact />
-          </div>
+          </main>
         </div>
-      </main>
+      </div>
     </div>
   );
 }

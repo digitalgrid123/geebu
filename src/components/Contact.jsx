@@ -21,7 +21,7 @@ const Contact = () => {
                   <div className="row">
                     <div className="col-lg-1"></div>
                     <div className="col-lg-10 ">
-                      <div className="height-text d-flex align-items-center">
+                      <div className="pt-140 pb-230">
                         <h1 className="relative pl-15 ">
                           Shape the future of African entertainment industry
                           with GEEBU.
@@ -35,7 +35,6 @@ const Contact = () => {
                 <div className="image-absolute-wrapper">
                   <img
                     loading="lazy"
-                    className="img-afrobeats"
                     src="/images/Afrobeats..png"
                     alt="Afrobeats"
                   />

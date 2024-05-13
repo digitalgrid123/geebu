@@ -5,7 +5,7 @@ const About = () => {
     <section id="about">
       <div className="container-fluid">
         <div className="row">
-          <div className="col-lg-12">
+          <div className="col-lg-12 ">
             <div className="border-about">
               <div className="about-section relative">
                 <div className="justify-between padding-logo">
@@ -16,30 +16,24 @@ const About = () => {
                   />
                   <h6 className="est-text">EST 2024</h6>
                 </div>
-                <div className="container-fluid ">
-                  <div className="row">
-                    <div className="col-lg-1"></div>
-                    <div className="col-lg-10 ">
-                      <div className="height-text d-flex align-items-center">
-                        <h1 className="relative pl-15 ">
-                          AI powered investment <br /> platform for African{" "}
-                          <br />
-                          entertainment industry, <br /> starting with{" "}
-                          <span class="image-wrapper">
-                            <img
-                              className="img-afrobeats"
-                              src="/images/Afrobeats..png"
-                              alt="Afrobeats"
-                            />
-                          </span>
-                        </h1>
-                      </div>
-                    </div>
-                    <div className="col-lg-1"></div>
-                  </div>
+                <div className="pt-140 pb-230 pl-130 ">
+                  <h1 className="relative">
+                    AI powered investment
+                    <br />
+                    platform for African
+                    <br />
+                    entertainment industry, <br />
+                    starting with
+                    <img
+                      className="img-afrobeats"
+                      src="/images/Afrobeats..png"
+                      alt="Afrobeats"
+                    />
+                  </h1>
                 </div>
               </div>
             </div>
+
             <div className="border-about mt-20">
               <div className="about-footer ">
                 <div className="align-images">

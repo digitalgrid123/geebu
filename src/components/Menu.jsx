@@ -71,11 +71,7 @@ const Menu = () => {
             activeSection === "about" ? "active" : ""
           } ${isMobile && activeSection !== "about" ? "centered" : ""}`}
           onClick={() => scrollToSection("about")}
-          style={
-            !isMobile && activeSection !== "about"
-              ? { gap: `${gapHeight}px` }
-              : null
-          } // Adjust gap for desktop
+          // Adjust gap for desktop
         >
           <h6 className="roman-text">I</h6>
           {isMobile && activeSection === "about" && (
@@ -88,11 +84,6 @@ const Menu = () => {
             activeSection === "pain-points" ? "active" : ""
           }${isMobile && activeSection !== "pain-points" ? "centered" : ""}`}
           onClick={() => scrollToSection("pain-points")}
-          style={
-            !isMobile && activeSection !== "pain-points"
-              ? { gap: `${gapHeight}px` }
-              : null
-          } // Adjust gap for desktop
         >
           <h6 className="roman-text">II</h6>
           {isMobile && activeSection === "pain-points" && (
@@ -105,11 +96,6 @@ const Menu = () => {
             activeSection === "new-approach" ? "active" : ""
           }${isMobile && activeSection !== "new-approach" ? "centered" : ""}`}
           onClick={() => scrollToSection("new-approach")}
-          style={
-            !isMobile && activeSection !== "new-approach"
-              ? { gap: `${gapHeight}px` }
-              : null
-          } // Adjust gap for desktop
         >
           <h6 className="roman-text">III</h6>
           {isMobile && activeSection === "new-approach" && (
@@ -122,11 +108,6 @@ const Menu = () => {
             activeSection === "products" ? "active" : ""
           }${isMobile && activeSection !== "products" ? "centered" : ""}`}
           onClick={() => scrollToSection("products")}
-          style={
-            !isMobile && activeSection !== "products"
-              ? { gap: `${gapHeight}px` }
-              : null
-          } // Adjust gap for desktop
         >
           <h6 className="roman-text">IV</h6>
           {isMobile && activeSection === "products" && (
@@ -139,11 +120,6 @@ const Menu = () => {
             activeSection === "benefits" ? "active" : ""
           }${isMobile && activeSection !== "benefits" ? "centered" : ""}`}
           onClick={() => scrollToSection("benefits")}
-          style={
-            !isMobile && activeSection !== "benefits"
-              ? { gap: `${gapHeight}px` }
-              : null
-          } // Adjust gap for desktop
         >
           <h6 className="roman-text">V</h6>
           {isMobile && activeSection === "benefits" && (
@@ -156,11 +132,6 @@ const Menu = () => {
             activeSection === "contact-us" ? "active" : ""
           }${isMobile && activeSection !== "contact-us" ? "centered" : ""}`}
           onClick={() => scrollToSection("contact-us")}
-          style={
-            !isMobile && activeSection !== "contact-us"
-              ? { gap: `${gapHeight}px` }
-              : null
-          } // Adjust gap for desktop
         >
           <h6 className="roman-text"> VI</h6>
           {isMobile && activeSection === "contact-us" && (
