@@ -121,14 +121,20 @@ section {
 .side-menu ul {
   list-style-type: none;
   padding: 0;
+  height: 100vh;
   display: flex;
+  margin: 0;
   flex-direction: column;
+  gap: 12px;
+  justify-content: space-between;
 }
 
-.side-menu li {
-  margin-bottom: 12px;
+/* .side-menu li {
+  gap: 12px;
+} */
+section:last-of-type {
+  margin-bottom: 0;
 }
-
 .main-section {
   padding: 20px;
 }
@@ -148,14 +154,15 @@ section {
   font-family: var(--Quattrocento);
 }
 .side-menu {
-  height: auto;
+  height: 100vh; /* Set the height to 100% of the viewport height */
   overflow-y: hidden;
-  position: sticky;
+  position: fixed;
+  padding: 20px;
   top: 0;
   left: 0;
   bottom: 0;
-  margin: 20px 0;
   display: flex;
+  width: 9%;
   flex-direction: column;
 }
 
@@ -169,11 +176,9 @@ section {
   gap: 24px;
   cursor: pointer;
   justify-content: space-between;
+  width: 100%;
 }
 
-.navigation.active {
-  gap: 412px;
-}
 .align-images {
   display: flex;
   justify-content: space-around;
@@ -243,7 +248,7 @@ section {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  text-align: center; /* Center-align the text */
+  text-align: center;
 }
 .relative {
   position: relative;
@@ -258,7 +263,7 @@ section {
   padding-left: 130px;
 }
 .pb-230 {
-  padding-bottom: 230px;
+  padding-bottom: 244px;
 }
 .about-section {
   border: 1px solid var(--dark-blue);
@@ -401,6 +406,9 @@ section {
   display: flex;
   flex-direction: column;
   height: 100%;
+}
+.navigation.active {
+  gap: 411px;
 }
 .border-approach {
   border-radius: 20px;
@@ -674,34 +682,38 @@ section {
   }
   .navigation {
     border-radius: 20px;
-    padding: 2px 22px;
+    width: 52px;
+    height: 72px;
+    display: flex;
+    justify-content: center;
   }
   .navigation.active {
     gap: 0;
     width: 169px;
     padding-top: 8px;
   }
-  .side-menu {
+  /* .side-menu {
     width: 100%;
     flex-direction: column;
     align-items: flex-start;
     padding: 10px;
     top: auto;
-  }
+  } */
   .side-menu ul {
     flex-direction: row;
     list-style-type: none;
     display: flex;
     gap: 11px;
+    margin: 0;
+    height: auto;
+    width: 555px;
   }
   .centered {
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  .side-menu li {
-    margin-bottom: 0;
-  }
+
   .container-fluid {
     /* position: relative; */
     overflow: hidden;
@@ -718,14 +730,18 @@ section {
   .main-content {
     padding-right: 0;
     position: relative;
-    height: calc(100vh - 60px); /* Adjust the height according to your needs */
-    overflow-y: auto; /* Enable vertical scrolling */
-    padding-bottom: 60px; /* Height of the fixed menu */
+
+    overflow-y: auto;
+    padding-bottom: 60px;
+  }
+  .side-menu::-webkit-scrollbar {
+    display: none;
   }
 
   .side-menu {
-    position: fixed;
+    top: auto;
     bottom: 0;
+    height: auto;
     left: 0;
     width: 100%;
     background-color: var(--text-color);
