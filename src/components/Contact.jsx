@@ -1,6 +1,12 @@
 import React, { useEffect, useState } from "react";
 
 const Contact = () => {
+  const openNewTab = () => {
+    const url = "https://form.jotform.com/241345003472345";
+
+    window.open(url, "_blank");
+  };
+
   return (
     <section id="contact-us">
       <div className="container-fluid">
@@ -49,7 +55,10 @@ const Contact = () => {
                   <div className="container-fluid">
                     <div className="row">
                       <div className="col-lg-4 flex-center ">
-                        <button className="bg-white contact-btn">
+                        <button
+                          className="bg-white contact-btn"
+                          onClick={openNewTab}
+                        >
                           <span>Contact us</span>
                         </button>
                       </div>

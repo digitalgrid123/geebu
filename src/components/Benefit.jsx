@@ -1,6 +1,16 @@
 import React, { useEffect, useState } from "react";
 
 const Benefit = () => {
+  const FanTab = () => {
+    const url = "https://form.jotform.com/241344622233346";
+
+    window.open(url, "_blank");
+  };
+  const ArtistTab = () => {
+    const url = "https://form.jotform.com/241343701041340";
+
+    window.open(url, "_blank");
+  };
   return (
     <section id="benefits">
       <div className="container-fluid">
@@ -20,7 +30,7 @@ const Benefit = () => {
               </div>
               <div className="benefit-footer ">
                 <div className="align-btn">
-                  <button className="bg-black sign-btn">
+                  <button className="bg-black sign-btn" onClick={FanTab}>
                     <span className="sign-text">Sign up</span>
                   </button>
                 </div>
@@ -43,7 +53,7 @@ const Benefit = () => {
               </div>
               <div className="benefit-footer ">
                 <div className="align-btn">
-                  <button className="bg-black sign-btn">
+                  <button className="bg-black sign-btn" onClick={ArtistTab}>
                     <span className="sign-text">Sign up</span>
                   </button>
                 </div>
