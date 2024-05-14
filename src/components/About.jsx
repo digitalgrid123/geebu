@@ -23,13 +23,16 @@ const About = () => {
                     platform for African
                     <br />
                     entertainment industry, <br />
-                    starting with
-                    <img
-                      className="img-afrobeats-about"
-                      src="/images/Afrobeats..png"
-                      alt="Afrobeats"
-                    />
+                    starting with Afrobeats.
                   </h1>
+                </div>
+                <div className="image-absolute-wrapper">
+                  <img
+                    loading="lazy"
+                    className="img-afrobeats-contact"
+                    src="/images/Afrobeats..png"
+                    alt="Afrobeats"
+                  />
                 </div>
               </div>
             </div>

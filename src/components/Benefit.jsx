@@ -21,7 +21,7 @@ const Benefit = () => {
               <div className="benefit-footer ">
                 <div className="align-btn">
                   <button className="bg-black sign-btn">
-                    <span className="sign-text">sign up</span>
+                    <span className="sign-text">Sign up</span>
                   </button>
                 </div>
               </div>
@@ -35,7 +35,8 @@ const Benefit = () => {
                 </div>
                 <div className="">
                   <h1 className="mt-101 text-black">
-                    Gain dedicated fanbase, funding, and exposure before hitting
+                    Gain dedicated fanbase, funding, and exposure before hitting{" "}
+                    <br />
                     mainstream.
                   </h1>
                 </div>
@@ -43,7 +44,7 @@ const Benefit = () => {
               <div className="benefit-footer ">
                 <div className="align-btn">
                   <button className="bg-black sign-btn">
-                    <span className="sign-text">sign up</span>
+                    <span className="sign-text">Sign up</span>
                   </button>
                 </div>
               </div>
