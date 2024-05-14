@@ -9,14 +9,15 @@ const ProductSection = ({ data }) => {
             <h6 className="sub-heading">{data.heading1}</h6>
           </div>
           <div>
-            <h1 className="margin-top font-40 ">
-              <span className="font-50">{data.span}</span>.{data.heading2}
+            <h1 className="margin-top font-40  align-items-end">
+              <span className="font-50 line-normal">{data.span}</span>.
+              {data.heading2}
             </h1>
           </div>
         </div>
         <div className="product-section-second">
           <div>
-            <p className="pain-paragraph">{data.description}</p>
+            <p className="pain-paragraph text-center">{data.description}</p>
           </div>
         </div>
       </div>

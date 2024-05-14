@@ -35,7 +35,7 @@ const Product = () => {
         "Community-driven Investment Platform: Fans become virtual 'record labels' investing in promising artists.",
     },
     {
-      heading1: "Product A.",
+      heading1: "Product C.",
       span: "GEEBU",
       heading2: "LEAGUE",
 
@@ -43,7 +43,7 @@ const Product = () => {
         "Inspired by the Premier League, its  revolutionary platform where fans and artists compete for success.",
     },
     {
-      heading1: "Product B.",
+      heading1: "Product D.",
       span: "GEEBU",
       heading2: "MARKETERS",
 
