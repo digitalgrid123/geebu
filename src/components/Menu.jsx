@@ -7,19 +7,16 @@ const Menu = () => {
   const [gapHeight, setGapHeight] = useState(24);
   const menuRef = useRef(null);
 
-  // Function to check if the screen size is mobile
   const checkIsMobile = () => {
-    setIsMobile(window.innerWidth <= 768); // Adjust the breakpoint as needed
+    setIsMobile(window.innerWidth <= 768);
   };
 
-  // Function to calculate and set the gap height
   const calculateGapHeight = () => {
     const screenHeight = window.innerHeight;
-    const gap = screenHeight * 0.4; // Set gap to 50% of screen height
+    const gap = screenHeight * 0.4;
     setGapHeight(gap);
   };
 
-  // Add event listeners to check screen size and calculate gap height on component mount and resize
   useEffect(() => {
     checkIsMobile();
     calculateGapHeight();
@@ -33,12 +30,12 @@ const Menu = () => {
     };
   }, []);
 
-  useIntersectionObserver(setActiveSection); // Custom hook to set active section on scroll
+  useIntersectionObserver(setActiveSection);
 
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      setActiveSection(sectionId); // Update active section when scrolled
+      setActiveSection(sectionId);
       if ("scrollIntoView" in element) {
         const offset =
           window.pageYOffset + element.getBoundingClientRect().top - 20;

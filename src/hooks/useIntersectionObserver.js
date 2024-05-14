@@ -12,11 +12,10 @@ const useIntersectionObserver = (setActiveSection) => {
       },
       {
         rootMargin: "0px",
-        threshold: 0.5, // Adjust this value based on your needs
+        threshold: 0.5,
       }
     );
 
-    // Sections to observe
     const sections = document.querySelectorAll("section");
     sections.forEach((section) => observer.observe(section));
 

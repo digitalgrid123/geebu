@@ -2,21 +2,6 @@ import React, { useEffect, useState } from "react";
 import ProductSection from "./section/ProductSection";
 
 const Product = () => {
-  const [isMobile, setIsMobile] = useState(false);
-
-  // Function to check if the screen size is mobile
-  const checkIsMobile = () => {
-    setIsMobile(window.innerWidth <= 768); // Adjust the breakpoint as needed
-  };
-
-  // Add event listener to check screen size on component mount
-  useEffect(() => {
-    checkIsMobile();
-    window.addEventListener("resize", checkIsMobile);
-    return () => {
-      window.removeEventListener("resize", checkIsMobile);
-    };
-  }, []);
   const productsData = [
     {
       heading1: "Product A.",

@@ -8,7 +8,6 @@ import Approach from "./components/Approach";
 import Product from "./components/Product";
 import Benefit from "./components/Benefit";
 import Contact from "./components/Contact";
-// Import other components here
 
 function App() {
   return (

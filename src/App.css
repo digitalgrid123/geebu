@@ -7,7 +7,11 @@
   --orange: #ff3d00;
   --blue: #3d44fcd4;
   --dark-blue: #3d44fc33;
-
+  --light-orange-border: #ff3d0033;
+  --light-green-border: #2d6a4f33;
+  --light-black-border: #1b1d1a33;
+  --light-yellow-border: #ffbd0033;
+  --light-purple-border: #7b2cbf33;
   --green: #2d6a4f;
   --black: #1b1d1a;
 
@@ -129,9 +133,6 @@ section {
   justify-content: space-between;
 }
 
-/* .side-menu li {
-  gap: 12px;
-} */
 section:last-of-type {
   margin-bottom: 0;
 }
@@ -154,7 +155,7 @@ section:last-of-type {
   font-family: var(--Quattrocento);
 }
 .side-menu {
-  height: 100vh; /* Set the height to 100% of the viewport height */
+  height: 100vh;
   overflow-y: hidden;
   position: fixed;
   padding: 20px;
@@ -377,7 +378,7 @@ section:last-of-type {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  text-align: center; /* Center-align the text */
+  text-align: center;
   padding: 0 48px;
 }
 .approach-footer {
@@ -401,7 +402,7 @@ section:last-of-type {
 }
 .border-point {
   border-radius: 20px;
-  border: 1px solid #ff3d0033;
+  border: 1px solid var(--light-orange-border);
   padding: 0 0 0 8px;
   display: flex;
   flex-direction: column;
@@ -412,13 +413,13 @@ section:last-of-type {
 }
 .border-approach {
   border-radius: 20px;
-  border: 1px solid #2d6a4f33;
+  border: 1px solid var(--light-green-border);
   padding: 0 0 0 8px;
 }
 
 .border-product {
   border-radius: 20px;
-  border: 1px solid #1b1d1a33;
+  border: 1px solid var(--light-black-border);
   padding: 0 0 0 8px;
   display: flex;
   flex-direction: column;
@@ -426,7 +427,7 @@ section:last-of-type {
 }
 .border-benefit {
   border-radius: 20px;
-  border: 1px solid #ffbd0033;
+  border: 1px solid var(--light-yellow-border);
   padding: 0 0 0 8px;
   display: flex;
   flex-direction: column;
@@ -464,7 +465,7 @@ section:last-of-type {
   gap: 24px;
   justify-content: center;
   width: 100%;
-  /* padding: 44px 0 0 0; */
+
   transform: translateY(-50%);
   text-align: center;
 }
@@ -513,7 +514,7 @@ section:last-of-type {
 }
 .border-contact {
   border-radius: 20px;
-  border: 1px solid #7b2cbf33;
+  border: 1px solid var(--light-purple-border);
   padding: 0 0 0 8px;
 }
 .line-normal {
@@ -597,7 +598,6 @@ button:focus {
   right: 50px;
 }
 
-/* Target screens between 0px to 390px */
 @media only screen and (max-width: 422px) {
   .roman-text {
     font-size: 28px;
@@ -723,7 +723,6 @@ button:focus {
   }
 
   .container-fluid {
-    /* position: relative; */
     overflow: hidden;
   }
   .font-40 {
@@ -848,7 +847,6 @@ button:focus {
   }
 }
 
-/* Target screens between 390px to 768px */
 @media only screen and (min-width: 422px) and (max-width: 768px) {
   section:last-of-type {
     margin-bottom: 30px;
@@ -1098,46 +1096,3 @@ button:focus {
     border-radius: 5px 5px 22px 22px;
   }
 }
-
-/* @media screen and (min-width: 1200px) {
-  .product-section {
-    border-radius: 34px 34px 0px 0px;
-    border: 1px solid var(--black);
-  }
-  .product-section-second {
-    border-radius: 5px 5px 34px 34px;
-  }
-  .approach-footer {
-    border-radius: 34px;
-  }
-  .approach-section {
-    border-radius: 34px;
-  }
-  .pain-footer {
-    border-radius: 34px;
-  }
-  .bg-pain {
-    border-radius: 34px;
-  }
-  .about-footer {
-    border-radius: 34px;
-  }
-  .about-section {
-    border-radius: 34px;
-  }
-  .relative-approach-section {
-    border-radius: 34px;
-  }
-  .bg-approach {
-    border-radius: 34px 34px 0px 0px;
-  }
-  .benefit-footer {
-    border-radius: 5px 5px 34px 34px;
-  }
-  .contact-section {
-    border-radius: 34px;
-  }
-  .contact-footer {
-    border-radius: 34px;
-  }
-} */
