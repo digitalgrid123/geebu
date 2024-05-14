@@ -30,7 +30,7 @@ const About = () => {
                   <img
                     loading="lazy"
                     className="img-afrobeats-contact"
-                    src="/images/Afrobeats..png"
+                    src="/images/Afrobeats.png"
                     alt="Afrobeats"
                   />
                 </div>

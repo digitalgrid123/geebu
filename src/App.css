@@ -333,7 +333,7 @@ section:last-of-type {
   width: 100%;
   border-radius: 20px;
   border: 1px solid var(--orange);
-  padding: 65px 13px 55px 55px;
+  padding: 100px 13px 55px 55px;
   flex: 1;
   background-image: url("/public/images/point2.webp");
   background-repeat: no-repeat;
@@ -437,7 +437,7 @@ section:last-of-type {
 .product-section {
   border-radius: 20px 20px 0px 0px;
   border: 1px solid var(--black);
-  padding: 32px 48px;
+  padding: 32px 0 32px 48px;
   background-image: url("/public/images/bg-product.webp");
   background-repeat: no-repeat;
   background-size: cover;
@@ -449,7 +449,7 @@ section:last-of-type {
   margin-top: -13px;
   border-radius: 5px 5px 20px 20px;
   border: 1px solid var(--black);
-  padding: 44px 18px 44px 48px;
+  padding: 63px 18px 35px 48px;
   background-image: url("/public/images/product2.webp");
   background-repeat: no-repeat;
   background-size: cover;

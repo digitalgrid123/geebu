@@ -17,7 +17,7 @@ const ProductSection = ({ data }) => {
         </div>
         <div className="product-section-second">
           <div>
-            <p className="pain-paragraph text-center">{data.description}</p>
+            <p className="pain-paragraph">{data.description}</p>
           </div>
         </div>
       </div>

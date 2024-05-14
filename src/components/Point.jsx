@@ -38,7 +38,10 @@ const Point = () => {
                   <h6 className="sub-heading">Pain Point B.</h6>
                 </div>
                 <div className="">
-                  <h1 className="mt-101">Passive Fans. Limited Impacts. </h1>
+                  <h1 className="mt-101">
+                    Passive Fans. Limited <br />
+                    Impacts.{" "}
+                  </h1>
                 </div>
               </div>
               <div className="pain-footer  relative">
