@@ -65,12 +65,16 @@ const Menu = () => {
           style={
             isMobile
               ? {
+                  padding: activeSection === "about" ? `5px 0px 3px 15p` : "0",
                   padding: activeSection === "about" ? `13px` : "0",
                   alignItems: activeSection === "about" ? `start` : "center",
                   gap: activeSection === "about" && "0",
                   width: activeSection === "about" && "152px",
                 }
-              : { gap: activeSection === "about" ? `${gapHeight}px` : "0" }
+              : {
+                  padding: `5px 0px 3px 15px`,
+                  gap: activeSection === "about" ? `${gapHeight}px` : "0",
+                }
           }
           onClick={() => scrollToSection("about")}
         >
@@ -92,6 +96,7 @@ const Menu = () => {
                   gap: activeSection === "pain-points" && "0",
                 }
               : {
+                  padding: `5px 0px 3px 15px`,
                   gap: activeSection === "pain-points" ? `${gapHeight}px` : "0",
                 }
           }
@@ -116,6 +121,7 @@ const Menu = () => {
                   gap: activeSection === "new-approach" && "0",
                 }
               : {
+                  padding: `5px 0px 3px 15px`,
                   gap:
                     activeSection === "new-approach" ? `${gapHeight}px` : "0",
                 }
@@ -139,7 +145,10 @@ const Menu = () => {
 
                   gap: activeSection === "products" && "0",
                 }
-              : { gap: activeSection === "products" ? `${gapHeight}px` : "0" }
+              : {
+                  padding: `5px 0px 3px 15px`,
+                  gap: activeSection === "products" ? `${gapHeight}px` : "0",
+                }
           }
           onClick={() => scrollToSection("products")}
         >
@@ -160,7 +169,10 @@ const Menu = () => {
 
                   gap: activeSection === "benefits" && "0",
                 }
-              : { gap: activeSection === "benefits" ? `${gapHeight}px` : "0" }
+              : {
+                  padding: `5px 0px 3px 15px`,
+                  gap: activeSection === "benefits" ? `${gapHeight}px` : "0",
+                }
           }
           onClick={() => scrollToSection("benefits")}
         >
@@ -184,7 +196,10 @@ const Menu = () => {
 
                   gap: activeSection === "contact-us" && "0",
                 }
-              : { gap: activeSection === "contact-us" ? `${gapHeight}px` : "0" }
+              : {
+                  padding: `5px 0px 3px 15px`,
+                  gap: activeSection === "contact-us" ? `${gapHeight}px` : "0",
+                }
           }
           onClick={() => scrollToSection("contact-us")}
         >
