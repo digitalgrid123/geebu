@@ -42,7 +42,7 @@ const Contact = () => {
                   <img
                     loading="lazy"
                     className="img-afrobeats-contact"
-                    src="/images/Afrobeats.png"
+                    src="/images/afrobeats.svg"
                     alt="Afrobeats"
                   />
                 </div>
