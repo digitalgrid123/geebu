@@ -65,6 +65,7 @@ const Menu = () => {
           style={
             isMobile
               ? {
+                  padding: activeSection === "about" ? `13px` : "0",
                   alignItems: activeSection === "about" ? `start` : "center",
                   gap: activeSection === "about" && "0",
                   width: activeSection === "about" && "152px",
@@ -84,6 +85,7 @@ const Menu = () => {
           style={
             isMobile
               ? {
+                  padding: activeSection === "pain-points" ? `13px` : "0",
                   alignItems:
                     activeSection === "pain-points" ? `start` : "center",
                   width: activeSection === "pain-points" && "152px",
@@ -106,6 +108,7 @@ const Menu = () => {
           style={
             isMobile
               ? {
+                  padding: activeSection === "new-approach" ? `13px` : "0",
                   alignItems:
                     activeSection === "new-approach" ? `start` : "center",
                   width: activeSection === "new-approach" && "152px",
@@ -130,6 +133,7 @@ const Menu = () => {
           style={
             isMobile
               ? {
+                  padding: activeSection === "products" ? `13px` : "0",
                   alignItems: activeSection === "products" ? `start` : "center",
                   width: activeSection === "products" && "152px",
 
@@ -150,6 +154,7 @@ const Menu = () => {
           style={
             isMobile
               ? {
+                  padding: activeSection === "benefits" ? `13px` : "0",
                   alignItems: activeSection === "benefits" ? `start` : "center",
                   width: activeSection === "benefits" && "152px",
 
@@ -172,6 +177,7 @@ const Menu = () => {
           style={
             isMobile
               ? {
+                  padding: activeSection === "contact-us" ? `13px` : "0",
                   alignItems:
                     activeSection === "contact-us" ? `start` : "center",
                   width: activeSection === "contact-us" && "152px",
